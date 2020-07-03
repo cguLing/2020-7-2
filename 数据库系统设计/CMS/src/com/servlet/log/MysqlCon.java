@@ -16,7 +16,7 @@ public class MysqlCon {
 		String base="cms";
 		String url = "jdbc:mysql://localhost:3306/"+base+"?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT"; 
 		String username = "root"; 
-		String password = "22dd66cc"; 
+		String password = "xxxxxx"; 
 		conn = null;    
 		if (conn == null) {
 			Class.forName(driver);
