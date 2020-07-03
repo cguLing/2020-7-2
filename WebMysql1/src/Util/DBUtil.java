@@ -10,11 +10,11 @@ public class DBUtil {
     public static final String driver="com.mysql.jdbc.Driver";
     public static final String url="jdbc:mysql://localhost:3306/webmysql1?useUnicode=true&characterEncoding=UTF-8&userSSL=false&serverTimezone=GMT%2B8";
     public static final String username="root";
-    public static final String password="22dd66cc";
+    public static final String password="xxxxxx";
     public static Connection con=null;
     static{
         try {
-            Class.forName(driver);//µÃµ½DriverManager£¬ÔÚÏÂÃæ½¨Á¢Á¬½ÓÊ±Ê¹ÓÃ
+            Class.forName(driver);//å¾—åˆ°DriverManagerï¼Œåœ¨ä¸‹é¢å»ºç«‹è¿æ¥æ—¶ä½¿ç”¨
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
