@@ -1,0 +1,50 @@
+create table user(
+empID int auto_increment not null primary key,
+password varchar(255) not null,
+isAdmin char(1) not null)AUTO_INCREMENT=1000;
+
+create table depinfo(
+depID varchar(8) not null primary key,
+depEr varchar(8) not null,
+depDsc varchar(255) not null);
+
+create table empinfo(
+empID int not null,
+departID char(8) not null,
+name varchar(50) not null,
+sex varchar(10) not null,
+cardID char(18) not null,
+phone char(13) not null,
+email varchar(100) not null,
+Faddress varchar(1000) not null,
+salary float(10,2) not null,
+foreign key(empID) references user(empID) ON DELETE cascade);
+
+create table custinfo(
+custID int auto_increment not null primary key,
+custName varchar(10) not null,
+custSex varchar(10) not null,
+custTel varchar(13) not null,
+custEmail varchar(50) not null,
+custSfz varchar(18) not null);
+
+create table edinfo(
+empID int not null,
+depID varchar(8) not null,
+post varchar(20) not null,
+foreign key(empID) references user(empID) ON DELETE cascade,
+foreign key(depID) references depinfo(depID) ON DELETE cascade);
+
+create table projinfo(
+projID varchar(8) not null primary key,
+depID varchar(8) not null,
+projEr int not null,
+custID int not null,
+projName varchar(100) not null,
+projText varchar(1000) not null,
+projStart varchar(50) not null,
+projSta varchar(20) not null,
+projEnd varchar(50),
+foreign key(projEr) references user(empID) ON DELETE cascade,
+foreign key(depID) references depinfo(depID) ON DELETE cascade,
+foreign key(custID) references custinfo(custID)ON DELETE cascade);

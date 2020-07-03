@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//WebContent/login.jsp=UTF-8
+encoding//src/com/servlet/cust/CustAdd.java=UTF-8
+encoding//src/com/servlet/cust/CustDao.java=UTF-8
+encoding//src/com/servlet/ed/EDAdd.java=UTF-8
+encoding//src/com/servlet/ed/EDDao.java=UTF-8
+encoding//src/com/servlet/el/ELAdd.java=UTF-8
+encoding//src/com/servlet/el/ELDao.java=UTF-8
+encoding//src/com/servlet/proj/ProjAdd.java=UTF-8
+encoding//src/com/servlet/proj/ProjDao.java=UTF-8
